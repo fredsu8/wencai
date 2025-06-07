@@ -31,6 +31,14 @@ https://你的域名/你的uuid
   | AUTO_ACCESS  | 否 |  true  | 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量 |
 
 
-* js混肴地址：https://obfuscator.io  
+* js混肴地址：https://obfuscator.io
+* 
+
+- I am honored that DARTNODE is offering a free server to sponsor my project.<br>
+DARTNODE's official Web Site : [https://dartnode.com](https://dartnode.com?aff=CraftyMouse750)
+
+<a href="https://dartnode.com?aff=CraftyMouse750" target="_blank"><img src="https://status.dartnode.com/upload/logo1.png" width="100px"></a><br>
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
