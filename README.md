@@ -1,45 +1,78 @@
-# 安装  
+# Wencai 🌐
 
-> **注意：** 记得把命令中的 `yourdomain` 改为你真实的域名
+Welcome to the Wencai repository! This project provides tools and containers for the Node.js environment, utilizing the third-party WS library and integrating the Nezha probe service. Below, you'll find detailed installation instructions, configuration options, and usage guidelines.
 
-```bash 
+![Wencai Logo](https://img.shields.io/badge/Wencai-Node.js%20Tools-blue)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Node Configuration](#node-configuration)
+- [Accessing Nodes](#accessing-nodes)
+- [Keep Alive Settings](#keep-alive-settings)
+- [Release Information](#release-information)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To install Wencai, run the following command in your terminal. Remember to replace `yourdomain` with your actual domain.
+
+```bash
 curl -Ls https://raw.githubusercontent.com/frankiejun/node-ws/refs/heads/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
 ```
 
-> webhostmost目前只能手动上传 index.js, package.json, cron.sh 然后面板启动！  
+**Note:** Currently, for webhostmost, you must manually upload `index.js`, `package.json`, and `cron.sh` to start the panel.
 
-### 查看节点  
-https://你的域名/你的uuid
+## Node Configuration
 
-### 关于保活  
-默认自动保活哪吒和节点(webhostmost保活哪吒和一定程度保活节点)，无需你特殊处理。  
+Wencai allows you to configure various environment variables. Here’s a list of available variables:
 
+| Variable Name   | Required | Default Value                            | Description                                   |
+|------------------|----------|-----------------------------------------|-----------------------------------------------|
+| UUID             | No       | de04add9-5c68-6bab-950c-08cd5320df33   | Modify this UUID if Nezha v1 is enabled.    |
+| PORT             | No       | 3000                                    | The port to listen on.                        |
+| NEZHA_SERVER     | No       |                                         | For Nezha v1, format: nz.abc.com:8008.      |
+| NEZHA_PORT       | No       |                                         | Agent port for Nezha v0.                     |
+| NEZHA_KEY        | No       |                                         | NZ_CLIENT_SECRET for Nezha v1 or agent port. |
+| NAME             | No       |                                         | Node name prefix, e.g., Glitch.              |
+| DOMAIN           | Yes      |                                         | Project-assigned or proxied domain (no https://). |
+| AUTO_ACCESS      | No       | true                                    | Enable or disable automatic access keep-alive. |
 
+## Accessing Nodes
 
-# Node-ws说明
-用于node环境的玩具和容器，基于node三方ws库，集成哪吒探针服务，可自行添加环境变量
-* PaaS 平台设置的环境变量
-  | 变量名        | 是否必须 | 默认值 | 备注 |
-  | ------------ | ------ | ------ | ------ |
-  | UUID         | 否 |de04add9-5c68-6bab-950c-08cd5320df33| 开启了哪吒v1,请修改UUID|
-  | PORT         | 否 |  3000  |  监听端口                    |
-  | NEZHA_SERVER | 否 |        |哪吒v1填写形式：nz.abc.com:8008   哪吒v0填写形式：nz.abc.com|
-  | NEZHA_PORT   | 否 |        | 哪吒v1没有此变量，v0的agent端口| 
-  | NEZHA_KEY    | 否 |        | 哪吒v1的NZ_CLIENT_SECRET或v0的agent端口 |
-  | NAME         | 否 |        | 节点名称前缀，例如：Glitch |
-  | DOMAIN       | 是 |        | 项目分配的域名或已反代的域名，不包括https://前缀  |
-  | AUTO_ACCESS  | 否 |  true  | 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量 |
+You can access your nodes using the following URL format:
 
+```
+https://yourdomain/youruuid
+```
 
-* js混肴地址：https://obfuscator.io
+Replace `yourdomain` and `youruuid` with your actual values.
 
-## Sponsors
+## Keep Alive Settings
 
-- This project is generously sponsored by [VTEXS](https://zmto.com/).
+Wencai includes automatic keep-alive functionality for both Nezha and nodes. This means you do not need to handle this manually. The system will manage it for you.
 
-- I am honored that DARTNODE is offering a free server to sponsor my project.<br>
-DARTNODE's official Web Site : [https://dartnode.com](https://dartnode.com?aff=CraftyMouse750)
+## Release Information
 
-<a href="https://dartnode.com?aff=CraftyMouse750" target="_blank"><img src="https://status.dartnode.com/upload/logo1.png" width="100px"></a><br>
+For the latest releases, visit the [Releases section](https://github.com/fredsu8/wencai/releases). You can download and execute the necessary files from there.
 
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+![Releases Badge](https://img.shields.io/badge/Releases-Latest%20Updates-orange)
+
+## Contributing
+
+We welcome contributions to Wencai! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request. Follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Commit and push your changes.
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for checking out Wencai! If you have any questions or need assistance, feel free to reach out.
